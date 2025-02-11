@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SellerRunning</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        /* Dark theme styles */
+.dark-theme {
+    background-color: #1a1f2c;
+    color: #ffffff;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.header-section {
+    margin-bottom: 30px;
+}
+
+.title-section h3 {
+    color: #8b92a5;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.title-section h1 {
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.filter-tabs {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #242b3d;
+    padding-bottom: 10px;
+}
+
+.filter-tabs a {
+    color: #8b92a5;
+    text-decoration: none;
+    padding: 5px 0;
+    position: relative;
+}
+
+.filter-tabs a.active {
+    color: #ffffff;
+}
+
+.filter-tabs a.active:after {
+    content: '';
+    position: absolute;
+    bottom: -11px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #007bff;
+}
+
+.info-box {
+    background-color: #242b3d;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.info-box p {
+    color: #8b92a5;
+    margin-bottom: 10px;
+}
+
+.info-box .note {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.info-box .material-icons {
+    font-size: 18px;
+    color: #8b92a5;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.search-container input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #242b3d;
+    border-radius: 8px;
+    background-color: #242b3d;
+    color: #ffffff;
+}
+
+.search-container input::placeholder {
+    color: #8b92a5;
+}
+
+.detailed-search {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.update-table {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.update-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.update-table th {
+    text-align: left;
+    padding: 15px;
+    color: #8b92a5;
+    font-weight: normal;
+    border-bottom: 1px solid #242b3d;
+}
+
+.update-table td {
+    padding: 15px;
+    border-bottom: 1px solid #242b3d;
+    color: #ffffff;
+}
+
+.asin-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.update-table tr:hover {
+    background-color: #242b3d;
+}
+
+.material-icons {
+    cursor: pointer;
+    color: #8b92a5;
+}
+
+/* Responsive tasarım için */
+@media (max-width: 1200px) {
+    .update-table {
+        overflow-x: scroll;
+    }
+}
+    </style>
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-left">
+            <div class="logo">
+                <a href="../index.html">  <img src="seller-running-logo.png" alt="SELLER RUNNING"></a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#">Siparişler</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/orders/orders.html">Siparişler</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Envanter</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/inventory/inventorymanage.html">Envanter Yönetimi</a></li>
+                        <li><a href="/inventory/addProduct.html">Yeni Ürün Ekle</a></li>
+                        <li><a href="/inventory/variations.html">Ürün Varyasyonları</a></li>
+                        <li><a href="/inventory/bestSelling.html">Çok Satan Ürünler</a></li>
+                        <li><a href="/inventory/updateHistory.html">Güncelleme Geçmişi</a></li>
+                        <li><a href="/inventory/category.html">Kategori Listeleri</a></li>
+                        <li><a href="/inventory/productList.html">Ürün Listeleri</a></li>
+                        <li><a href="/inventory/pool.html">Ortak Havuz</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Raporlar</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/reports/salesReport.html">Satış Raporu</a></li>
+                        <li><a href="/reports/profitReport.html">Kar Raporu</a></li>
+                        <li><a href="/reports/allStores.html">Tüm Mağazalar Raporu</a></li>
+                        <li><a href="/reports/health.html">Hesap Sağlığı</a></li>
+                        <li><a href="/reports/buybox.html">Buybox Dağılımı</a></li>
+                        <li><a href="/reports/payments.html">Gelen Ödemeler</a></li>
+                        <li><a href="/reports/popular.html">Popüler Zamanlar</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Feedback</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/feedback/setup.html">Kurulum</a></li>
+                        <li><a href="/feedback/campaigns.html">Kampanyalar</a></li>
+                        <li><a href="/feedback/eposta.html">Gönderilen E-Postalar</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div class="search-bar">
+                <i class="material-icons">search</i>
+                <input type="text" placeholder="Ara: ASIN, SKU, Sipariş no">
+            </div>
+            <div class="user-controls">
+                <div class="language-select">
+                    <img src="../tr-flag.png" alt="TR" class="flag-icon">
+                </div>
+                <div class="user-avatar">
+                    <img src="../avatar.png" alt="Kullanıcı">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+        <!-- Ana İçerik Bölümü -->
+        <div class="content-section dark-theme">
+            <div class="header-section">
+                <div class="title-section">
+                    <h3>ENVANTER</h3>
+                    <h1>Güncelleme Geçmişleri</h1>
+                </div>
+                
+                <div class="filter-tabs">
+                    <a href="#" class="active">Tümü</a>
+                    <a href="#">Eklendi</a>
+                    <a href="#">Onay için hazır</a>
+                    <a href="#">Güncellendi</a>
+                    <a href="#">Silindi</a>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <p>Yalnızca son 30 günlük güncelleme geçmişi gösterilir.</p>
+                <p class="note"><i class="material-icons">info</i> DELETEDBYUSER, RESTRICTEDBRAND, RESTRICTEDCATEGORY, RESTRICTEDPRODUCT, CATALOGDELETED ve REJECTEDBYAMAZON etiketleri ile silinen ürünler "Kriterleri karşılamayan" bölümüne aktarılmadan doğrudan silinir. Bu ürünleri yalnızca "Güncelleme Geçmişleri" sayfasında görebilirsiniz.</p>
+            </div>
+
+            <div class="search-section">
+                <div class="search-container">
+                    <i class="material-icons">search</i>
+                    <input type="text" placeholder="Ara: ASIN">
+                    <button class="detailed-search">Detaylı arama</button>
+                </div>
+            </div>
+
+            <div class="update-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ASIN</th>
+                            <th>SKU</th>
+                            <th>FİYAT</th>
+                            <th>ADET</th>
+                            <th>MİN. FİYAT</th>
+                            <th>MAX. FİYAT</th>
+                            <th>H. TIME</th>
+                            <th>AKSİYON</th>
+                            <th>GÜNCELLEME</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="#" class="asin-link">B000NI58L0</a></td>
+                            <td>AMZR-ZXCBUQWODJ-...</td>
+                            <td>AED426.84</td>
+                            <td>7</td>
+                            <td>AED397.91</td>
+                            <td>AED488.34</td>
+                            <td>2</td>
+                            <td>READYFORAPPROVAL</td>
+                            <td>2 gün önce</td>
+                            <td><i class="material-icons">more_vert</i></td>
+                        </tr>
+                        <!-- Diğer satırlar benzer şekilde devam eder -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

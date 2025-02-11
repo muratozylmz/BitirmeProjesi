@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SellerRunning</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+/* Koyu tema stilleri */
+.dark-theme {
+    background-color: #0F172A;
+    color: #fff;
+    min-height: 100vh;
+}
+
+.content-container {
+    padding: 24px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Header Bölümü */
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.left-header h3 {
+    color: #94A3B8;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.left-header h2 {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.count {
+    color: #94A3B8;
+}
+
+.right-header {
+    display: flex;
+    gap: 12px;
+}
+
+/* Butonlar */
+.country-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #1E293B;
+    border: 1px solid #334155;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 6px;
+}
+
+.delete-btn {
+    background: #1E293B;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.add-btn {
+    background: #3B82F6;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Tab Navigation */
+.tab-navigation {
+    display: flex;
+    gap: 24px;
+    border-bottom: 1px solid #334155;
+    margin-bottom: 24px;
+}
+
+.tab-navigation a {
+    color: #94A3B8;
+    text-decoration: none;
+    padding: 12px 0;
+    position: relative;
+}
+
+.tab-navigation a.active {
+    color: #3B82F6;
+}
+
+.tab-navigation a.active::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #3B82F6;
+}
+
+/* Arama Bölümü */
+.search-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    background: #1E293B;
+    border: 1px solid #334155;
+    border-radius: 6px;
+    padding: 8px 12px;
+    width: 300px;
+}
+
+.search-container input {
+    background: transparent;
+    border: none;
+    color: #fff;
+    margin-left: 8px;
+    width: 100%;
+}
+
+.search-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.white-btn, .white-select {
+    background: #1E293B;
+    color: #fff;
+    border: 1px solid #334155;
+    padding: 8px 16px;
+    border-radius: 6px;
+}
+
+.icon-btn {
+    background: #1E293B;
+    color: #fff;
+    border: 1px solid #334155;
+    padding: 8px;
+    border-radius: 6px;
+}
+
+/* Tablo Stilleri */
+.products-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.products-table th {
+    text-align: left;
+    padding: 12px;
+    color: #94A3B8;
+    border-bottom: 1px solid #334155;
+}
+
+.products-table td {
+    padding: 12px;
+    border-bottom: 1px solid #334155;
+    color: #fff;
+}
+    </style>
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-left">
+            <div class="logo">
+                <a href="../index.html">  <img src="seller-running-logo.png" alt="SELLER RUNNING"></a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#">Siparişler</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/orders/orders.html">Siparişler</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Envanter</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/inventory/inventorymanage.html">Envanter Yönetimi</a></li>
+                        <li><a href="/inventory/addProduct.html">Yeni Ürün Ekle</a></li>
+                        <li><a href="/inventory/variations.html">Ürün Varyasyonları</a></li>
+                        <li><a href="/inventory/bestSelling.html">Çok Satan Ürünler</a></li>
+                        <li><a href="/inventory/updateHistory.html">Güncelleme Geçmişi</a></li>
+                        <li><a href="/inventory/category.html">Kategori Listeleri</a></li>
+                        <li><a href="/inventory/productList.html">Ürün Listeleri</a></li>
+                        <li><a href="/inventory/pool.html">Ortak Havuz</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Raporlar</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/reports/salesReport.html">Satış Raporu</a></li>
+                        <li><a href="/reports/profitReport.html">Kar Raporu</a></li>
+                        <li><a href="/reports/allStores.html">Tüm Mağazalar Raporu</a></li>
+                        <li><a href="/reports/health.html">Hesap Sağlığı</a></li>
+                        <li><a href="/reports/buybox.html">Buybox Dağılımı</a></li>
+                        <li><a href="/reports/payments.html">Gelen Ödemeler</a></li>
+                        <li><a href="/reports/popular.html">Popüler Zamanlar</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Feedback</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/feedback/setup.html">Kurulum</a></li>
+                        <li><a href="/feedback/campaigns.html">Kampanyalar</a></li>
+                        <li><a href="/feedback/eposta.html">Gönderilen E-Postalar</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div class="search-bar">
+                <i class="material-icons">search</i>
+                <input type="text" placeholder="Ara: ASIN, SKU, Sipariş no">
+            </div>
+            <div class="user-controls">
+                <div class="language-select">
+                    <img src="../tr-flag.png" alt="TR" class="flag-icon">
+                </div>
+                <div class="user-avatar">
+                    <img src="../avatar.png" alt="Kullanıcı">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Ana İçerik -->
+  
+
+    <main class="dark-theme">
+        <div class="content-container">
+            <div class="header-section">
+                <div class="left-header">
+                    <h3>ÜRÜNLER</h3>
+                    <h2>Mağazaya Aktarılan <span class="count">4.645</span></h2>
+                </div>
+                <div class="right-header">
+                    <button class="country-btn">
+                        <img src="../assets/uae-flag.png" alt="U.A.E.">
+                        U.A.E.
+                    </button>
+                    <button class="delete-btn">
+                        <i class="material-icons">delete</i>
+                        Toplu Ürün Sil
+                    </button>
+                    <button class="add-btn">
+                        <i class="material-icons">add</i>
+                        Yeni Ürün Ekle
+                    </button>
+                </div>
+            </div>
+
+            <nav class="tab-navigation">
+                <a href="#" class="active">Mağazaya Aktarılan</a>
+                <a href="#">Kriterleri Karşılamayan</a>
+                <a href="#">Kuyrukta</a>
+                <a href="#">Amazon İzni Gereken</a>
+                <a href="#">Onay Bekleyen</a>
+            </nav>
+
+            <div class="search-section">
+                <div class="search-container">
+                    <i class="material-icons">search</i>
+                    <input type="text" placeholder="Ara: ASIN, SKU, Ürün adı">
+                    <div class="search-buttons">
+                        <button class="help-btn"><i class="material-icons">help</i></button>
+                        <button class="video-btn"><i class="material-icons">play_circle</i></button>
+                    </div>
+                </div>
+                <div class="action-buttons">
+                    <button class="white-btn">Kayıtlı aramalar</button>
+                    <button class="white-btn">Detaylı arama</button>
+                    <button class="icon-btn"><i class="material-icons">play_circle</i></button>
+                    <button class="icon-btn"><i class="material-icons">compare_arrows</i></button>
+                    <select class="white-select">
+                        <option>Seçili olanlar</option>
+                    </select>
+                    <select class="white-select">
+                        <option>İşlem seçin</option>
+                    </select>
+                </div>
+            </div>
+
+            <table class="products-table">
+                <thead>
+                    <tr>
+                        <th><input type="checkbox"></th>
+                        <th>ÜRÜN ADI</th>
+                        <th>ASIN</th>
+                        <th>FİYAT</th>
+                        <th>ADET</th>
+                        <th>MARKA</th>
+                        <th>GÜNCELLEME</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Ürün satırları buraya gelecek -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+</html>

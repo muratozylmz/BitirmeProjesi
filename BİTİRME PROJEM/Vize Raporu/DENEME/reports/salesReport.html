@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SellerRunning</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        /* Sales Report Page Styles */
+.dark-theme {
+    background-color: #1a1f2c;
+    color: #ffffff;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.title-category {
+    color: #8b92a5;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.title-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.count-badge {
+    background-color: #242b3d;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #8b92a5;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.date-picker {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #242b3d;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.tab-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #242b3d;
+    padding-bottom: 10px;
+}
+
+.tab-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.tab-links a {
+    color: #8b92a5;
+    text-decoration: none;
+    padding: 8px 0;
+    position: relative;
+}
+
+.tab-links a.active {
+    color: #ffffff;
+}
+
+.tab-links a.active:after {
+    content: '';
+    position: absolute;
+    bottom: -11px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #007bff;
+}
+
+.dropdown-btn {
+    background: none;
+    border: none;
+    color: #8b92a5;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    padding: 8px 0;
+}
+
+.download-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.info-box {
+    background-color: #242b3d;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    color: #8b92a5;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: #242b3d;
+    border-radius: 8px;
+    padding: 8px 16px;
+    margin-bottom: 20px;
+}
+
+.search-container input {
+    flex: 1;
+    background: none;
+    border: none;
+    color: #ffffff;
+    padding: 8px;
+}
+
+.search-container input::placeholder {
+    color: #8b92a5;
+}
+
+.sales-table {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.sales-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.sales-table th {
+    text-align: left;
+    padding: 15px;
+    color: #8b92a5;
+    font-weight: normal;
+    border-bottom: 1px solid #242b3d;
+}
+
+.sales-table td {
+    padding: 15px;
+    border-bottom: 1px solid #242b3d;
+}
+
+.order-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.status-badge {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.status-badge.refunded {
+    background-color: rgba(0, 184, 212, 0.1);
+    color: #00b8d4;
+}
+
+.strikethrough {
+    text-decoration: line-through;
+    color: #8b92a5;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .header-section {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .header-actions {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .sales-table {
+        overflow-x: scroll;
+    }
+}
+    </style>
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-left">
+            <div class="logo">
+                <a href="../index.html">  <img src="seller-running-logo.png" alt="SELLER RUNNING"></a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#">Siparişler</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/orders/orders.html">Siparişler</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Envanter</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/inventory/inventorymanage.html">Envanter Yönetimi</a></li>
+                        <li><a href="/inventory/addProduct.html">Yeni Ürün Ekle</a></li>
+                        <li><a href="/inventory/variations.html">Ürün Varyasyonları</a></li>
+                        <li><a href="/inventory/bestSelling.html">Çok Satan Ürünler</a></li>
+                        <li><a href="/inventory/updateHistory.html">Güncelleme Geçmişi</a></li>
+                        <li><a href="/inventory/category.html">Kategori Listeleri</a></li>
+                        <li><a href="/inventory/productList.html">Ürün Listeleri</a></li>
+                        <li><a href="/inventory/pool.html">Ortak Havuz</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Raporlar</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/reports/salesReport.html">Satış Raporu</a></li>
+                        <li><a href="/reports/profitReport.html">Kar Raporu</a></li>
+                        <li><a href="/reports/allStores.html">Tüm Mağazalar Raporu</a></li>
+                        <li><a href="/reports/health.html">Hesap Sağlığı</a></li>
+                        <li><a href="/reports/buybox.html">Buybox Dağılımı</a></li>
+                        <li><a href="/reports/payments.html">Gelen Ödemeler</a></li>
+                        <li><a href="/reports/popular.html">Popüler Zamanlar</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Feedback</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/feedback/setup.html">Kurulum</a></li>
+                        <li><a href="/feedback/campaigns.html">Kampanyalar</a></li>
+                        <li><a href="/feedback/eposta.html">Gönderilen E-Postalar</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div class="search-bar">
+                <i class="material-icons">search</i>
+                <input type="text" placeholder="Ara: ASIN, SKU, Sipariş no">
+            </div>
+            <div class="user-controls">
+                <div class="language-select">
+                    <img src="../tr-flag.png" alt="TR" class="flag-icon">
+                </div>
+                <div class="user-avatar">
+                    <img src="../avatar.png" alt="Kullanıcı">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+<div class="content-section dark-theme">
+    <!-- Page Header -->
+    <div class="header-section">
+        <div class="title-area">
+            <div class="title-category">RAPORLAR</div>
+            <div class="title-wrapper">
+                <h1>Satış Raporu <span class="count-badge">20</span></h1>
+            </div>
+        </div>
+        <div class="header-actions">
+            <div class="date-picker">
+                <i class="material-icons">calendar_today</i>
+                <span>Aralık 21, 2024 - Ocak 21, 2025</span>
+                <i class="material-icons">arrow_drop_down</i>
+            </div>
+            <a href="#" class="youtube-link">
+                <img src="youtube-icon.svg" alt="YouTube">
+            </a>
+            <div class="country-selector">
+                <img src="uae-flag.svg" alt="UAE flag">
+                <span>U.A.E.</span>
+                <i class="material-icons">arrow_drop_down</i>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tab Navigation -->
+    <div class="tab-navigation">
+        <div class="tab-links">
+            <a href="#" class="active">Tümü</a>
+            <div class="dropdown">
+                <button class="dropdown-btn">
+                    Daha Fazla Seçenek
+                    <i class="material-icons">arrow_drop_down</i>
+                </button>
+            </div>
+        </div>
+        <button class="download-btn">
+            <i class="material-icons">download</i>
+            Raporu İndir
+        </button>
+    </div>
+
+    <!-- Info Box -->
+    <div class="info-box">
+        <p>Satış Raporu sayfası üzerinde siparişlerinizle ilgili ayrıntıları görüntüleyebilir ve bu bilgileri "Raporu indir" seçeneğini kullanarak indirebilirsiniz.</p>
+    </div>
+
+    <!-- Search Section -->
+    <div class="search-container">
+        <i class="material-icons">search</i>
+        <input type="text" placeholder="Ara: ASIN, SKU, Sipariş Numarası">
+    </div>
+
+    <!-- Sales Table -->
+    <div class="sales-table">
+        <table>
+            <thead>
+                <tr>
+                    <th>SİPARİŞ NO</th>
+                    <th>ALICI SİPARİŞ NO</th>
+                    <th>DURUM</th>
+                    <th>FİYAT</th>
+                    <th>KÂR</th>
+                    <th>KÂR%</th>
+                    <th>FEE</th>
+                    <th>TARİH</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#" class="order-link">171-7490084-2923522</a></td>
+                    <td>...</td>
+                    <td><span class="status-badge refunded">Refunded</span></td>
+                    <td>AED159.32</td>
+                    <td class="strikethrough">AED12.33</td>
+                    <td class="strikethrough">10%</td>
+                    <td class="strikethrough">AED23.90</td>
+                    <td>16 gün önce</td>
+                    <td><i class="material-icons">more_vert</i></td>
+                </tr>
+                <!-- Diğer satırlar benzer yapıda -->
+            </tbody>
+        </table>
+    </div>
+</div>

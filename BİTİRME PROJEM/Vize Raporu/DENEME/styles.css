@@ -1,0 +1,545 @@
+:root {
+    --primary-bg: #0f1824;
+    --secondary-bg: #1a2332;
+    --text-primary: #ffffff;
+    --text-secondary: #8b94a3;
+    --accent-blue: #3498db;
+    --accent-green: #2ecc71;
+    --accent-red: #e74c3c;
+    --border-color: #2c3644;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: var(--primary-bg);
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+
+/* Navigation */
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--secondary-bg);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* Kullanıcı Kontrolleri Stili */
+.user-controls {
+    display: flex; /* Yatay hizalama */
+    align-items: center; /* Dikey ortalama */
+    gap: 10px; /* Elemanlar arası boşluk */
+}
+
+/* Dil Seçim Stili */
+.language-select {
+    display: flex; /* Yatay hizalama */
+    align-items: center; /* Dikey ortalama */
+}
+
+/* Bayrak İkonu Stili */
+.flag-icon {
+    width: 20px; /* Bayrak boyutu */
+    height: auto; /* Orantılı boyut */
+}
+
+/* Kullanıcı Avatarı Stili */
+.user-avatar {
+    display: flex; /* Yatay hizalama */
+    align-items: center; /* Dikey ortalama */
+    border-radius: 50%; /* Yuvarlak simge */
+    overflow: hidden; /* Taşmayı önle */
+    width: 40px; /* Genişlik */
+    height: 40px; /* Yükseklik */
+}
+
+.user-avatar img {
+    width: 100%; /* Tam genişlik */
+    height: auto; /* Orantılı boyut */
+    border-radius: 50%; /* Yuvarlak simge */
+}
+
+.logo a{
+    text-decoration: none; /* Alt çizgiyi kaldır */
+    color: #850c18; /* Yazı rengi */
+    font-size: 24px; /* Yazı boyutu */
+    font-weight: bold; /* Yazı kalınlığı */
+}
+
+/* Bağlantı durumları için stil ayarları */
+.logo a:hover,
+.logo a:focus,
+.logo a:active {
+    color: #ffffff; /* Üzerine gelindiğinde veya tıklandığında rengi beyaz yap */
+    outline: none; /* Kenar çizgisi kaldır */
+}
+
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.nav-menu a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.nav-menu a.active {
+    color: var(--text-primary);
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: var(--primary-bg);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    width: 300px;
+}
+
+.search-bar i {
+    color: var(--text-secondary);
+    margin-right: 0.5rem;
+}
+
+.search-bar input {
+    background: none;
+    border: none;
+    color: var(--text-primary);
+    width: 100%;
+    outline: none;
+}
+
+/* Info Banner */
+.info-banner {
+    background-color: var(--accent-blue);
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.info-divider {
+    width: 1px;
+    height: 24px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.positive {
+    color: var(--accent-green);
+}
+
+/* Dashboard Container */
+.dashboard-container {
+    padding: 2rem;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+/* Stats Row */
+.stats-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.stat-card {
+    background-color: var(--secondary-bg);
+    padding: 1.5rem;
+    border-radius: 8px;
+    position: relative;
+}
+
+.stat-header {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.stat-value {
+    font-size: 1.8rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.currency {
+    font-size: 1rem;
+    color: var(--text-secondary);
+}
+
+.progress-bar {
+    margin-top: 1rem;
+    height: 4px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 2px;
+}
+
+.progress {
+    height: 100%;
+    background-color: var(--accent-blue);
+    border-radius: 2px;
+    transition: width 0.3s ease;
+}
+
+/* Content Grid */
+.content-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Chart Section */
+.chart-section {
+    background-color: var(--secondary-bg);
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+.chart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.chart-tabs {
+    display: flex;
+    gap: 1rem;
+}
+
+.chart-tabs button {
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.chart-tabs button.active {
+    color: var(--text-primary);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Sales Summary */
+.sales-summary {
+    background-color: var(--secondary-bg);
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+.sales-summary table {
+    width: 100%;
+    margin-top: 1rem;
+    border-collapse: collapse;
+}
+
+.sales-summary th,
+.sales-summary td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.sales-summary th {
+    color: var(--text-secondary);
+    font-weight: normal;
+    font-size: 0.9rem;
+}
+
+.last-update {
+    color: var(--text-secondary);
+    font-size: 0.8rem;
+    margin-top: 1rem;
+}
+
+/* Bottom Grid */
+.bottom-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Inventory Summary */
+.inventory-summary {
+    background-color: var(--secondary-bg);
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+.inventory-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.stat-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.stat-item i {
+    color: var(--accent-blue);
+}
+
+.warning {
+    color: var(--accent-red);
+}
+
+/* Store Preferences */
+.store-preferences {
+    margin-top: 2rem;
+}
+
+.preference-item {
+    margin-top: 1.5rem;
+}
+
+.preference-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toggle-switch {
+    width: 40px;
+    height: 20px;
+    background-color: var(--border-color);
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.toggle-switch.off::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: var(--text-secondary);
+    border-radius: 50%;
+    left: 2px;
+    top: 2px;
+    transition: transform 0.3s;
+}
+
+.preference-desc {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+/* Orders Section */
+.orders-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.orders-table th,
+.orders-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.orders-table th {
+    color: var(--text-secondary);
+    font-weight: normal;
+    font-size: 0.9rem;
+}
+
+.status {
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
+
+.status.refunded {
+    background-color: rgba(52, 152, 219, 0.2);
+    color: var(--accent-blue);
+}
+
+.profit {
+    color: var(--accent-green);
+}
+
+/* Products Section */
+.products-section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+}
+
+.products-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.product-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.product-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+/* Categories */
+.category-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.category-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem;
+    background-color: var(--secondary-bg);
+    border-radius: 4px;
+}
+
+.category-stats {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.more-options {
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    cursor: pointer;
+}
+
+/* Utility Classes */
+.view-all {
+    color: var(--accent-blue);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .stats-row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .content-grid,
+    .bottom-grid,
+    .products-section {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+    }
+    
+    .search-bar {
+        width: 200px;
+    }
+    
+    .stats-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+.nav-menu li {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--secondary-bg);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    min-width: 200px;
+    z-index: 1000;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0;
+}
+
+.nav-menu li:hover .dropdown-menu {
+    display: block;
+}
+
+.nav-menu li:hover::after {
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 100%;
+    bottom: -20px;
+    left: 0;
+}
+
+.dropdown-menu li {
+    display: block;
+    width: 100%;
+}
+
+.dropdown-menu li a {
+    padding: 10px 15px;
+    display: block;
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.dropdown-menu li a:hover {
+    background-color: var(--primary-bg);
+    color: var(--text-primary);
+}
