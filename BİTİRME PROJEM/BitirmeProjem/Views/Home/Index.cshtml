@@ -1,76 +1,8 @@
-﻿
-<!DOCTYPE html>
-<html lang="tr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SellerRunning</title>
-    <link rel="stylesheet" href="~/css/style.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-</head>
-<body>
-    <nav class="main-nav">
-        <div class="nav-left">
-            <div class="logo">
-                <a href="/Home/index"> <img src="seller-running-logo.png" alt="SELLER RUNNING"></a>
-            </div>
-            <ul class="nav-menu">
-                <li>
-                    <a href="#">Siparişler</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="/orders/orders">Siparişler</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">Envanter</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="/inventory/inventorymanage">Envanter Yönetimi</a></li>
-                        <li><a href="/inventory/addProduct">Yeni Ürün Ekle</a></li>
-                        <li><a href="/inventory/variations">Ürün Varyasyonları</a></li>
-                        <li><a href="/inventory/bestSelling">Çok Satan Ürünler</a></li>
-                        <li><a href="/inventory/updateHistory">Güncelleme Geçmişi</a></li>
-                        <li><a href="/inventory/category">Kategori Listeleri</a></li>
-                        <li><a href="/inventory/productList">Ürün Listeleri</a></li>
-                        <li><a href="/inventory/pool">Ortak Havuz</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">Raporlar</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="/reports/salesReport">Satış Raporu</a></li>
-                        <li><a href="/reports/profitReport">Kar Raporu</a></li>
-                        <li><a href="/reports/allStores">Tüm Mağazalar Raporu</a></li>
-                        <li><a href="/reports/health">Hesap Sağlığı</a></li>
-                        <li><a href="/reports/buybox">Buybox Dağılımı</a></li>
-                        <li><a href="/reports/payments">Gelen Ödemeler</a></li>
-                        <li><a href="/reports/popular">Popüler Zamanlar</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">Feedback</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="/feedback/setup">Kurulum</a></li>
-                        <li><a href="/feedback/campaigns">Kampanyalar</a></li>
-                        <li><a href="/feedback/eposta">Gönderilen E-Postalar</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-        <div class="nav-right">
-            <div class="search-bar">
-                <i class="material-icons">search</i>
-                <input type="text" placeholder="Ara: ASIN, SKU, Sipariş no">
-            </div>
-            <div class="user-controls">
-                <div class="language-select">
-                    <img src="~/images/tr-flag.png" alt="TR" class="flag-icon">
-                </div>
-                <div class="user-avatar">
-                    <img src="~/images/avatar.png" alt="Kullanıcı">
-                </div>
-            </div>
-        </div>
-    </nav>
+﻿@{
+    ViewData["Title"] = "Anasayfa";
+}
+
+
 
     <div class="info-banner">
         <div class="info-item">
@@ -350,5 +282,6 @@
             </div>
         </div>
     </div>
-</body>
-</html>
+@section Scripts {
+    <script src="~/js/Home/index.js"></script>
+}
