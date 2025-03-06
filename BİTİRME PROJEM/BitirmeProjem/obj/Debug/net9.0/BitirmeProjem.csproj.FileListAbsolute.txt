@@ -1,0 +1,109 @@
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\bin\Debug\net9.0\appsettings.Development.json
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\bin\Debug\net9.0\appsettings.json
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\bin\Debug\net9.0\BitirmeProjem.staticwebassets.runtime.json
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\bin\Debug\net9.0\BitirmeProjem.staticwebassets.endpoints.json
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\bin\Debug\net9.0\BitirmeProjem.exe
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\bin\Debug\net9.0\BitirmeProjem.deps.json
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\bin\Debug\net9.0\BitirmeProjem.runtimeconfig.json
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\bin\Debug\net9.0\BitirmeProjem.dll
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\bin\Debug\net9.0\BitirmeProjem.pdb
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\BitirmeProjem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\BitirmeProjem.AssemblyInfoInputs.cache
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\BitirmeProjem.AssemblyInfo.cs
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\BitirmeProjem.csproj.CoreCompileInputs.cache
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\BitirmeProjem.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\BitirmeProjem.RazorAssemblyInfo.cache
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\BitirmeProjem.RazorAssemblyInfo.cs
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\BitirmeProjem.sourcelink.json
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\scopedcss\bundle\BitirmeProjem.styles.css
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\scopedcss\projectbundle\BitirmeProjem.bundle.scp.css
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\compressed\ve6rsc817t-b9sayid5wm.gz
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\compressed\loi405pffo-61n19gt1b8.gz
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\compressed\ozfzfchth0-xtxxf3hu2r.gz
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\compressed\39okfejm3a-bqjiyaj88i.gz
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\compressed\ohzjsn8qhx-c2jlpeoesf.gz
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\compressed\lc8nylb3lv-erw9l3u2r3.gz
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\compressed\4hhm8beezs-aexeepp0ev.gz
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\compressed\scr3lkayes-d7shbmvgxk.gz
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\compressed\hm6b7iwbki-ausgxo2sd3.gz
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\compressed\h79fnvxhxn-k8d9w2qqmf.gz
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\compressed\smwxo9pdal-cosvhxvwiu.gz
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\compressed\5y2xf07wru-ub07r2b239.gz
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\compressed\6uf8jnqrkw-fvhpjtyr6v.gz
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\compressed\i3jruq5clb-b7pk76d08c.gz
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\compressed\4emjglucar-fsbi9cje9m.gz
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\compressed\xbx0kzjnsj-rzd6atqjts.gz
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\compressed\w6u1h6jyb8-ee0r1s7dh0.gz
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\compressed\pur27xc4za-dxx9fxp4il.gz
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\compressed\9p4mr7pff9-jd9uben2k1.gz
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\compressed\nw9ulf1vy0-khv3u5hwcm.gz
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\compressed\nsgvdls09e-r4e9w2rdcm.gz
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\compressed\d6snvwwf54-lcd1t2u6c8.gz
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\compressed\r92cvjs9xt-c2oey78nd0.gz
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\compressed\kl4ybk1haq-tdbxkamptv.gz
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\compressed\uynnoa4hp8-j5mq2jizvt.gz
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\compressed\tw5lilxwyq-06098lyss8.gz
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\compressed\nxp9mjxc8g-nvvlpmu67g.gz
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\compressed\hvvnugv01c-s35ty4nyc5.gz
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\compressed\u8z6bol3dx-pj5nd1wqec.gz
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\compressed\nmmescq91l-46ein0sx1k.gz
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\compressed\dcd6mfn8n8-v0zj4ognzu.gz
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\compressed\uai3utsc7n-37tfw0ft22.gz
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\compressed\1bqfva1o6l-hrwsygsryq.gz
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\compressed\ds7gm32h8k-pk9g2wxc8p.gz
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\compressed\08kxshh0ti-ft3s53vfgj.gz
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\compressed\fchbaq1p3d-6cfz1n2cew.gz
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\compressed\n22ucfygyb-6pdc2jztkx.gz
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\compressed\asaec1tzdu-493y06b0oq.gz
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\compressed\ahjen93uf1-iovd86k7lj.gz
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\compressed\urqyp0fuzc-vr1egmr9el.gz
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\compressed\p9cn2o0y7i-kbrnm935zg.gz
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\compressed\pbf4a7f5y9-jj8uyg4cgr.gz
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\compressed\2hjat1cedv-y7v9cxd14o.gz
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\compressed\xmjg1yj4qn-notf2xhcfb.gz
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\compressed\ok7k3j1v1z-h1s4sie4z3.gz
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\compressed\5badyelbi7-63fj8s7r0e.gz
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\compressed\pem7mmtg70-0j3bgjxly4.gz
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\compressed\6cbj4rkru1-47otxtyo56.gz
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\compressed\ap304yscqf-4v8eqarkd7.gz
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\compressed\47zjh6ok3m-356vix0kms.gz
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\compressed\4ibpcu2m1e-83jwlth58m.gz
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\compressed\c8lldkz7qk-mrlpezrjn3.gz
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\compressed\u56b32hgmi-lzl9nlhx6b.gz
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\compressed\ew2wpychj4-ag7o75518u.gz
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\compressed\q8wxtw7cf5-x0q3zqp4vz.gz
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\compressed\tk450ezw51-0i3buxo5is.gz
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\compressed\0zwp7s2k7q-o1o13a6vjx.gz
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\compressed\lk0vu5egiz-ttgo8qnofa.gz
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\compressed\0pz729zl27-2z0ns9nrw6.gz
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\compressed\jm5fvxihvz-muycvpuwrr.gz
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\compressed\1lgoycq2ag-87fc7y1x7t.gz
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\compressed\46dgudne3e-mlv21k5csn.gz
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\compressed\e997oc51ku-jde0s77jbf.gz
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\compressed\3omc711rzf-jde0s77jbf.gz
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\staticwebassets.build.json
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\staticwebassets.development.json
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\staticwebassets\msbuild.BitirmeProjem.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\staticwebassets\msbuild.BitirmeProjem.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\staticwebassets\msbuild.build.BitirmeProjem.props
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.BitirmeProjem.props
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.BitirmeProjem.props
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\staticwebassets.pack.json
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\BitirmeProjem.dll
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\refint\BitirmeProjem.dll
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\BitirmeProjem.pdb
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\BitirmeProjem.genruntimeconfig.cache
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\Vize Raporu\DENEME\BitirmeProjem\obj\Debug\net9.0\ref\BitirmeProjem.dll
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\BitirmeProjem\obj\Debug\net9.0\BitirmeProjem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\BitirmeProjem\obj\Debug\net9.0\BitirmeProjem.AssemblyInfoInputs.cache
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\BitirmeProjem\obj\Debug\net9.0\BitirmeProjem.AssemblyInfo.cs
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\BitirmeProjem\obj\Debug\net9.0\BitirmeProjem.csproj.CoreCompileInputs.cache
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\BitirmeProjem\obj\Debug\net9.0\BitirmeProjem.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\BitirmeProjem\obj\Debug\net9.0\BitirmeProjem.RazorAssemblyInfo.cache
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\BitirmeProjem\obj\Debug\net9.0\BitirmeProjem.RazorAssemblyInfo.cs
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\BitirmeProjem\obj\Debug\net9.0\BitirmeProjem.sourcelink.json
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\BitirmeProjem\obj\Debug\net9.0\BitirmeProjem.dll
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\BitirmeProjem\obj\Debug\net9.0\refint\BitirmeProjem.dll
+C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\BitirmeProjem\obj\Debug\net9.0\BitirmeProjem.pdb

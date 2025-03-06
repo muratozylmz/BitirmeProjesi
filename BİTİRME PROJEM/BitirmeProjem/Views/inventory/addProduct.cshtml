@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SellerRunning</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        /* Yeni Ürün Ekleme Sayfası Stilleri */
+.add-product-container {
+    padding: 2rem;
+    background-color: #1a2634;
+    min-height: calc(100vh - 60px);
+    color: #fff;
+}
+
+.product-form {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.envanter-title {
+    color: #4a90e2;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+.page-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #fff;
+}
+
+.bulk-add-section {
+    background-color: #243447;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.info-text {
+    margin: 1.5rem 0;
+}
+
+.info-text p {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 0;
+    color: #a8b3cf;
+}
+
+.info-text .material-icons {
+    color: #4a90e2;
+    margin-right: 0.5rem;
+}
+
+.selection-area, .asin-input-area, .sku-prefix-area {
+    margin: 2rem 0;
+}
+
+.asin-select {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #1a2634;
+    border: 1px solid #364c63;
+    border-radius: 4px;
+    color: #fff;
+    margin: 0.5rem 0;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    background-color: #1a2634;
+    border: 1px solid #364c63;
+    border-radius: 4px;
+    color: #fff;
+    padding: 1rem;
+    resize: vertical;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #1a2634;
+    border: 1px solid #364c63;
+    border-radius: 4px;
+    color: #fff;
+}
+
+.select-hint, .input-hint, .sku-hint {
+    color: #a8b3cf;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+.add-products-btn {
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.add-products-btn:hover {
+    background-color: #357abd;
+}
+
+h3, h4 {
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+    .add-product-container {
+        padding: 1rem;
+    }
+
+    .bulk-add-section {
+        padding: 1rem;
+    }
+}
+    </style>
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-left">
+            <div class="logo">
+                <a href="../index.html">  <img src="seller-running-logo.png" alt="SELLER RUNNING"></a>
+            </div>
+            <ul class="nav-menu">
+                <li>
+                    <a href="#">Siparişler</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/orders/orders.html">Siparişler</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Envanter</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/inventory/inventorymanage.html">Envanter Yönetimi</a></li>
+                        <li><a href="/inventory/addProduct.html">Yeni Ürün Ekle</a></li>
+                        <li><a href="/inventory/variations.html">Ürün Varyasyonları</a></li>
+                        <li><a href="/inventory/bestSelling.html">Çok Satan Ürünler</a></li>
+                        <li><a href="/inventory/updateHistory.html">Güncelleme Geçmişi</a></li>
+                        <li><a href="/inventory/category.html">Kategori Listeleri</a></li>
+                        <li><a href="/inventory/productList.html">Ürün Listeleri</a></li>
+                        <li><a href="/inventory/pool.html">Ortak Havuz</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Raporlar</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/reports/salesReport.html">Satış Raporu</a></li>
+                        <li><a href="/reports/profitReport.html">Kar Raporu</a></li>
+                        <li><a href="/reports/allStores.html">Tüm Mağazalar Raporu</a></li>
+                        <li><a href="/reports/health.html">Hesap Sağlığı</a></li>
+                        <li><a href="/reports/buybox.html">Buybox Dağılımı</a></li>
+                        <li><a href="/reports/payments.html">Gelen Ödemeler</a></li>
+                        <li><a href="/reports/popular.html">Popüler Zamanlar</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Feedback</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/feedback/setup.html">Kurulum</a></li>
+                        <li><a href="/feedback/campaigns.html">Kampanyalar</a></li>
+                        <li><a href="/feedback/eposta.html">Gönderilen E-Postalar</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div class="search-bar">
+                <i class="material-icons">search</i>
+                <input type="text" placeholder="Ara: ASIN, SKU, Sipariş no">
+            </div>
+            <div class="user-controls">
+                <div class="language-select">
+                    <img src="../tr-flag.png" alt="TR" class="flag-icon">
+                </div>
+                <div class="user-avatar">
+                    <img src="../avatar.png" alt="Kullanıcı">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <main class="add-product-container">
+        <div class="product-form">
+            <h1 class="envanter-title">ENVANTER</h1>
+            <h2 class="page-title">Yeni Ürün Ekle</h2>
+
+            <div class="bulk-add-section">
+                <h3>Toplu şekilde ürün ekleyin.</h3>
+                <div class="info-text">
+                    <p><i class="material-icons">check</i> Mağazanıza eklemek istediğiniz ürünlerin ASIN'lerini veya ürün URL'lerini sistemimizde zahmetsizce ekleyebilirsiniz.</p>
+                    <p><i class="material-icons">check</i> Ekleme işlemini tamamladıktan sonra, ürünleriniz 60 dakika içinde mağazanıza yüklemeye başlar.</p>
+                </div>
+
+                <div class="selection-area">
+                    <h4>Seçim yapın</h4>
+                    <select class="asin-select">
+                        <option value="asin">ASIN</option>
+                    </select>
+                    <p class="select-hint">ASIN veya ürün URL'ine göre mi ekleme yapacaksınız?</p>
+                </div>
+
+                <div class="asin-input-area">
+                    <h4>ASIN veya ürün URL Listesi</h4>
+                    <textarea placeholder="Her satıra bir tane olmak üzere bir ASIN listesi girin."></textarea>
+                    <p class="input-hint">Bir seferde en fazla 5.000 ASIN veya ürün URL'i girebilirsiniz.</p>
+                </div>
+
+                <div class="sku-prefix-area">
+                    <h4>SKU Prefix</h4>
+                    <input type="text" placeholder="SKU'larınız için bir ön ek belirleyin.">
+                    <p class="sku-hint">SKU şöyle görünecektir: AMZR-XXXX-123456</p>
+                </div>
+
+                <button class="add-products-btn">Ürünleri Ekle</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Views",
+    "\\Views\\feedback",
+    "\\Views\\inventory",
+    "\\Views\\orders",
+    "\\Views\\reports",
+    "\\wwwroot",
+    "\\wwwroot\\css",
+    "\\wwwroot\\images",
+    "\\wwwroot\\js"
+  ],
+  "SelectedNode": "\\Views\\reports\\allStores.cshtml",
+  "PreviewInSolutionExplorer": false
+}

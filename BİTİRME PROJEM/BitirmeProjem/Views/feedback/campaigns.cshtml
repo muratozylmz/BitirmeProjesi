@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SellerRunning</title>
+    <link rel="stylesheet" href="../wwwroot/css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+
+.dark-theme {
+    background-color: #1a1f2c;
+    color: #ffffff;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.create-campaign-btn {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.info-box {
+    background-color: #242b3d;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    color: #8b92a5;
+}
+
+/* Search Section */
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: #242b3d;
+    border-radius: 8px;
+    padding: 8px 16px;
+    margin-bottom: 20px;
+}
+
+.search-container input {
+    flex: 1;
+    background: none;
+    border: none;
+    color: #ffffff;
+    padding: 8px;
+}
+
+.search-container input::placeholder {
+    color: #8b92a5;
+}
+
+/* Campaigns Table */
+.campaigns-table {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.campaigns-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.campaigns-table th,
+.campaigns-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #242b3d;
+}
+
+.campaigns-table th {
+    color: #8b92a5;
+    font-weight: normal;
+}
+
+.campaigns-table tr:hover {
+    background-color: #242b3d;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .header-section {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .campaigns-table {
+        overflow-x: scroll;
+    }
+}
+    </style>
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-left">
+            <div class="logo">
+                <a href="../Home/index.cshtml">  <img src="seller-running-logo.png" alt="SELLER RUNNING"></a>
+            </div>
+            <ul class="nav-menu">
+                <li>
+                    <a href="#">Siparişler</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/orders/orders.cshtml">Siparişler</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Envanter</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/inventory/inventorymanage.cshtml">Envanter Yönetimi</a></li>
+                        <li><a href="/inventory/addProduct.cshtml">Yeni Ürün Ekle</a></li>
+                        <li><a href="/inventory/variations.cshtml">Ürün Varyasyonları</a></li>
+                        <li><a href="/inventory/bestSelling.cshtml">Çok Satan Ürünler</a></li>
+                        <li><a href="/inventory/updateHistory.cshtml">Güncelleme Geçmişi</a></li>
+                        <li><a href="/inventory/category.cshtml">Kategori Listeleri</a></li>
+                        <li><a href="/inventory/productList.cshtml">Ürün Listeleri</a></li>
+                        <li><a href="/inventory/pool.cshtml">Ortak Havuz</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Raporlar</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/reports/salesReport.cshtml">Satış Raporu</a></li>
+                        <li><a href="/reports/profitReport.cshtml">Kar Raporu</a></li>
+                        <li><a href="/reports/allStores.cshtml">Tüm Mağazalar Raporu</a></li>
+                        <li><a href="/reports/health.cshtml">Hesap Sağlığı</a></li>
+                        <li><a href="/reports/buybox.cshtml">Buybox Dağılımı</a></li>
+                        <li><a href="/reports/payments.cshtml">Gelen Ödemeler</a></li>
+                        <li><a href="/reports/popular.cshtml">Popüler Zamanlar</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Feedback</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/feedback/setup.cshtml">Kurulum</a></li>
+                        <li><a href="/feedback/campaigns.cshtml">Kampanyalar</a></li>
+                        <li><a href="/feedback/eposta.cshtml">Gönderilen E-Postalar</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div class="search-bar">
+                <i class="material-icons">search</i>
+                <input type="text" placeholder="Ara: ASIN, SKU, Sipariş no">
+            </div>
+            <div class="user-controls">
+                <div class="language-select">
+                    <img src="../wwwroot/images/tr-flag.png" alt="TR" class="flag-icon">
+                </div>
+                <div class="user-avatar">
+                    <img src="../wwwroot/images/avatar.png" alt="Kullanıcı">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="content-section dark-theme">
+        <!-- Page Header -->
+        <div class="header-section">
+            <div class="title-area">
+                <h1>Kampanyalar <span class="campaign-count">0</span></h1>
+            </div>
+            <div class="header-actions">
+                <button class="create-campaign-btn">Kampanya Oluştur</button>
+                <a href="#" class="youtube-link">
+                    <img src="youtube-icon.svg" alt="YouTube">
+                </a>
+                <div class="country-selector">
+                    <img src="uae-flag.svg" alt="UAE flag">
+                    <span>U.A.E.</span>
+                    <i class="material-icons">arrow_drop_down</i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Info Box -->
+        <div class="info-box">
+            <p>Akıllı otomasyon sistemimizle, geri bildirim almayı bir tıklama kadar basit hale getirdik. İtibarınızı yönetmede proaktif olun ve müşterilerinizden olumlu geri bildirim isteyin. En fazla 5 adete kadar feedback kampanyası oluşturabilirsiniz.</p>
+            <p><i class="material-icons">info</i> Önemli: Feedback e-posta ayarlarını tamamlamadıysanız, lütfen <a href="#">buraya tıklayın</a>. Feedback kampanyalarının çalışabilmesi için siparişlerinizi SellerRunning etkinleştirmeyi unutmayın.</p>
+        </div>
+
+        <!-- Search Section -->
+        <div class="search-container">
+            <i class="material-icons">search</i>
+            <input type="text" placeholder="Ara">
+        </div>
+
+        <!-- Campaigns Table -->
+        <div class="campaigns-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>KONU</th>
+                        <th>NE ZAMAN</th>
+                        <th>GÖNDERİM ZAMANI</th>
+                        <th>DURUM</th>
+                        <th>OLUŞTURMA</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="5">Gösterilecek kampanya yok.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

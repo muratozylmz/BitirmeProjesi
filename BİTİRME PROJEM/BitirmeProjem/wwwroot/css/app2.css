@@ -1,0 +1,14 @@
+@media (max-width: 768px) {
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .header-actions {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .date-picker {
+        width: 100%;
+    }
+}

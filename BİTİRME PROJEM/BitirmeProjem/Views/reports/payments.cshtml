@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SellerRunning</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        /* Incoming Payments Page Styles */
+.dark-theme {
+    background-color: #1a1f2c;
+    color: #ffffff;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.info-box {
+    background-color: #242b3d;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    color: #8b92a5;
+}
+
+/* Payments Table */
+.payments-table {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.payments-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.payments-table th,
+.payments-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #242b3d;
+}
+
+.payments-table th {
+    color: #8b92a5;
+    font-weight: normal;
+}
+
+.payments-table tr:hover {
+    background-color: #242b3d;
+}
+
+.status {
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.status.open {
+    color: #28a745;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .header-section {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .payments-table {
+        overflow-x: scroll;
+    }
+}
+    </style>
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-left">
+            <div class="logo">
+                <a href="../index.html">  <img src="seller-running-logo.png" alt="SELLER RUNNING"></a>
+            </div>
+            <ul class="nav-menu">
+                <li>
+                    <a href="#">Siparişler</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/orders/orders.html">Siparişler</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Envanter</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/inventory/inventorymanage.html">Envanter Yönetimi</a></li>
+                        <li><a href="/inventory/addProduct.html">Yeni Ürün Ekle</a></li>
+                        <li><a href="/inventory/variations.html">Ürün Varyasyonları</a></li>
+                        <li><a href="/inventory/bestSelling.html">Çok Satan Ürünler</a></li>
+                        <li><a href="/inventory/updateHistory.html">Güncelleme Geçmişi</a></li>
+                        <li><a href="/inventory/category.html">Kategori Listeleri</a></li>
+                        <li><a href="/inventory/productList.html">Ürün Listeleri</a></li>
+                        <li><a href="/inventory/pool.html">Ortak Havuz</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Raporlar</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/reports/salesReport.html">Satış Raporu</a></li>
+                        <li><a href="/reports/profitReport.html">Kar Raporu</a></li>
+                        <li><a href="/reports/allStores.html">Tüm Mağazalar Raporu</a></li>
+                        <li><a href="/reports/health.html">Hesap Sağlığı</a></li>
+                        <li><a href="/reports/buybox.html">Buybox Dağılımı</a></li>
+                        <li><a href="/reports/payments.html">Gelen Ödemeler</a></li>
+                        <li><a href="/reports/popular.html">Popüler Zamanlar</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Feedback</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/feedback/setup.html">Kurulum</a></li>
+                        <li><a href="/feedback/campaigns.html">Kampanyalar</a></li>
+                        <li><a href="/feedback/eposta.html">Gönderilen E-Postalar</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div class="search-bar">
+                <i class="material-icons">search</i>
+                <input type="text" placeholder="Ara: ASIN, SKU, Sipariş no">
+            </div>
+            <div class="user-controls">
+                <div class="language-select">
+                    <img src="../tr-flag.png" alt="TR" class="flag-icon">
+                </div>
+                <div class="user-avatar">
+                    <img src="../avatar.png" alt="Kullanıcı">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="content-section dark-theme">
+        <!-- Page Header -->
+        <div class="header-section">
+            <div class="title-area">
+                <h1>Gelen Ödemeler</h1>
+            </div>
+            <div class="header-actions">
+                <a href="#" class="youtube-link">
+                    <img src="youtube-icon.svg" alt="YouTube">
+                </a>
+                <div class="country-selector">
+                    <img src="uae-flag.svg" alt="UAE flag">
+                    <span>U.A.E.</span>
+                    <i class="material-icons">arrow_drop_down</i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Info Box -->
+        <div class="info-box">
+            <p>Bu sayfadaki veriler Amazon'un banka hesaplarınıza yaptığı ödemeleri yansıtır.</p>
+        </div>
+
+        <!-- Payments Table -->
+        <div class="payments-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ORİJİNAL</th>
+                        <th>DÖNÜŞTÜRÜLMÜŞ</th>
+                        <th>DURUM</th>
+                        <th>TRANSFER</th>
+                        <th>BANKA</th>
+                        <th>TRACE ID</th>
+                        <th>TARİH</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>0.00 AED</td>
+                        <td>0.00 AED</td>
+                        <td><span class="status open">Open</span></td>
+                        <td>...</td>
+                        <td>...</td>
+                        <td>...</td>
+                        <td>...</td>
+                    </tr>
+                    <tr>
+                        <td>-1247.79 AED</td>
+                        <td>-1247.79 AED</td>
+                        <td><span class="status open">Open</span></td>
+                        <td>...</td>
+                        <td>...</td>
+                        <td>...</td>
+                        <td>...</td>
+                    </tr>
+                    <tr>
+                        <td>-15.00 AED</td>
+                        <td>-15.00 AED</td>
+                        <td><span class="status open">Open</span></td>
+                        <td>...</td>
+                        <td>...</td>
+                        <td>...</td>
+                        <td>...</td>
+                    </tr>
+                    <tr>
+                        <td>74.23 AED</td>
+                        <td>74.23 AED</td>
+                        <td><span class="status open">Open</span></td>
+                        <td>...</td>
+                        <td>...</td>
+                        <td>...</td>
+                        <td>...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

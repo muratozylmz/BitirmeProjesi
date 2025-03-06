@@ -1,0 +1,357 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SellerRunning</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-left">
+            <div class="logo">
+                <a href="index.html"> <img src="seller-running-logo.png" alt="SELLER RUNNING"></a>
+            </div>
+            <ul class="nav-menu">
+                <li>
+                    <a href="#">Siparişler</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/orders/orders.html">Siparişler</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Envanter</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/inventory/inventorymanage.html">Envanter Yönetimi</a></li>
+                        <li><a href="/inventory/addProduct.html">Yeni Ürün Ekle</a></li>
+                        <li><a href="/inventory/variations.html">Ürün Varyasyonları</a></li>
+                        <li><a href="/inventory/bestSelling.html">Çok Satan Ürünler</a></li>
+                        <li><a href="/inventory/updateHistory.html">Güncelleme Geçmişi</a></li>
+                        <li><a href="/inventory/category.html">Kategori Listeleri</a></li>
+                        <li><a href="/inventory/productList.html">Ürün Listeleri</a></li>
+                        <li><a href="/inventory/pool.html">Ortak Havuz</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Raporlar</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/reports/salesReport.html">Satış Raporu</a></li>
+                        <li><a href="/reports/profitReport.html">Kar Raporu</a></li>
+                        <li><a href="/reports/allStores.html">Tüm Mağazalar Raporu</a></li>
+                        <li><a href="/reports/health.html">Hesap Sağlığı</a></li>
+                        <li><a href="/reports/buybox.html">Buybox Dağılımı</a></li>
+                        <li><a href="/reports/payments.html">Gelen Ödemeler</a></li>
+                        <li><a href="/reports/popular.html">Popüler Zamanlar</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Feedback</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/feedback/setup.html">Kurulum</a></li>
+                        <li><a href="/feedback/campaigns.html">Kampanyalar</a></li>
+                        <li><a href="/feedback/eposta.html">Gönderilen E-Postalar</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div class="search-bar">
+                <i class="material-icons">search</i>
+                <input type="text" placeholder="Ara: ASIN, SKU, Sipariş no">
+            </div>
+            <div class="user-controls">
+                <div class="language-select">
+                    <img src="tr-flag.png" alt="TR" class="flag-icon">
+                </div>
+                <div class="user-avatar">
+                    <img src="avatar.png" alt="Kullanıcı">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="info-banner">
+        <div class="info-item">
+            <span>Aboneliğiniz: </span>
+            <strong>Lite</strong>
+        </div>
+        <div class="info-item">
+            <span>Tolere edilebilir: </span>
+            <strong>5.150 <span class="positive">+3%</span></strong>
+        </div>
+        <div class="info-item">
+            <span>Sizin: </span>
+            <strong>4.970</strong>
+        </div>
+        <div class="info-divider"></div>
+        <div class="info-item">
+            <i class="material-icons">search</i>
+            <span>Günlük ürün arama limitiniz: </span>
+            <strong>25.750</strong>
+        </div>
+        <div class="info-item">
+            <span>Bugün aranan ürün: </span>
+            <strong>0</strong>
+        </div>
+        <div class="info-divider"></div>
+        <div class="info-item">
+            <i class="material-icons">store</i>
+            <span>Depo: </span>
+            <strong>SellerShipping LLC</strong>
+        </div>
+        <div class="info-item">
+            <i class="material-icons">star</i>
+            <span>Seviye: </span>
+            <strong>Starter Üye</strong>
+        </div>
+        <div class="info-item">
+            <i class="material-icons">grade</i>
+            <span>Puan: </span>
+            <strong>0</strong>
+        </div>
+    </div>
+
+    <div class="dashboard-container">
+        <div class="section-header">
+            <h2>GENEL BAKIŞ</h2>
+            <div class="header-controls">
+                <select class="period-select">
+                    <option>Son 365 Gün</option>
+                    <option>Son 30 Gün</option>
+                    <option>Son 7 Gün</option>
+                </select>
+                <select class="country-select">
+                    <option>U.A.E.</option>
+                    <option>USA</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="stats-row">
+            <div class="stat-card">
+                <div class="stat-header">ÜRÜN SATIŞLARI</div>
+                <div class="stat-value">
+                    <span class="currency">AED</span>5.176.91
+                    <i class="material-icons currency-icon">attach_money</i>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-header">TAHMİNİ KÂR</div>
+                <div class="stat-value">
+                    <span class="currency">AED</span>667.54
+                    <i class="material-icons currency-icon">attach_money</i>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-header">SİPARİŞ TAMAMLANDI</div>
+                <div class="stat-value">84.85%</div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 84.85%"></div>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-header">MAĞAZAYA AKTARILAN</div>
+                <div class="stat-value">4.645</div>
+            </div>
+        </div>
+
+        <div class="content-grid">
+            <div class="chart-section">
+                <div class="chart-header">
+                    <h3>Sipariş Geçmişi</h3>
+                    <div class="chart-tabs">
+                        <button class="active">Sipariş Grafiği</button>
+                        <button>Kâr Grafiği</button>
+                        <button>Maliyet Grafiği</button>
+                    </div>
+                </div>
+                <div class="chart" id="orderChart">
+                    <!-- Chart will be rendered here -->
+                </div>
+            </div>
+
+            <div class="sales-summary">
+                <h3>Satış Özeti</h3>
+                <table>
+                    <tr>
+                        <th>SÜRE</th>
+                        <th>SATIŞ</th>
+                        <th>BİRİM</th>
+                    </tr>
+                    <tr>
+                        <td>Bugün</td>
+                        <td>AED0.00</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>7 Gün</td>
+                        <td>AED0.00</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>15 Gün</td>
+                        <td>AED0.00</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>30 Gün</td>
+                        <td>AED2.559.94</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>90 Gün</td>
+                        <td>AED5.176.91</td>
+                        <td>16</td>
+                    </tr>
+                </table>
+                <div class="last-update">Son güncelleme: az önce</div>
+            </div>
+        </div>
+
+        <div class="bottom-grid">
+            <div class="inventory-summary">
+                <div class="section-header">
+                    <h3>Envanter Özeti</h3>
+                </div>
+                <div class="inventory-stats">
+                    <div class="stat-item">
+                        <i class="material-icons">shopping_cart</i>
+                        <span>Buybox ürün sayısı</span>
+                        <strong class="positive">202</strong>
+                    </div>
+                    <div class="stat-item">
+                        <i class="material-icons">trending_down</i>
+                        <span>Lowest ürün sayısı</span>
+                        <strong class="positive">251</strong>
+                    </div>
+                    <div class="stat-item">
+                        <i class="material-icons">inventory</i>
+                        <span>Stok dışı ürün sayısı</span>
+                        <strong class="warning">382</strong>
+                    </div>
+                    <div class="stat-item">
+                        <i class="material-icons">price_check</i>
+                        <span>Minimum fiyata ulaşan ürünler</span>
+                        <strong class="positive">966</strong>
+                    </div>
+                    <div class="stat-item">
+                        <i class="material-icons">store</i>
+                        <span>SR House ürün sayısı</span>
+                        <strong class="positive">255</strong>
+                    </div>
+                </div>
+
+                <div class="store-preferences">
+                    <h3>Mağaza Tercihleri <span class="settings-link">Ayarlar</span></h3>
+                    <div class="preference-item">
+                        <div class="preference-header">
+                            <h4>Otomatik sipariş onaylama</h4>
+                            <div class="toggle-switch off"></div>
+                        </div>
+                        <p class="preference-desc">SR House siparişleriniz sürekli takip edilir ve Amazon üzerinden otomatik olarak onaylanır.</p>
+                    </div>
+                    <div class="preference-item">
+                        <div class="preference-header">
+                            <h4>Otomatik sipariş ön onayı</h4>
+                            <div class="toggle-switch off"></div>
+                        </div>
+                        <p class="preference-desc">SR House siparişlerinizde karşılaşma geciktiğinde, sipariş bir takip numarası olmadan onaylanır.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="orders-section">
+                <div class="section-header">
+                    <h3>Siparişler</h3>
+                    <a href="/orders/orders.html" class="view-all">Tümünü gör</a>
+                </div>
+                <table class="orders-table">
+                    <thead>
+                        <tr>
+                            <th>SİPARİŞ NO</th>
+                            <th>DURUM</th>
+                            <th>FİYAT</th>
+                            <th>KÂR</th>
+                            <th>TARİH</th>
+                            <th>SİPARİŞ VER</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Örnek sipariş satırı -->
+                        <tr>
+                            <td>171-7490084-2923522</td>
+                            <td><span class="status refunded">Refunded</span></td>
+                            <td>AED159.32</td>
+                            <td><span class="profit">10% AED12.33</span></td>
+                            <td>16 gün önce</td>
+                            <td><span class="completed">Tamamlandı</span></td>
+                        </tr>
+                        <!-- Diğer siparişler buraya eklenecek -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="products-section">
+            <div class="bestsellers">
+                <div class="section-header">
+                    <h3>Çok satan ürünler</h3>
+                    <a href="/inventory/bestSelling.html" class="view-all">Tümünü gör</a>
+                </div>
+                <table class="products-table">
+                    <thead>
+                        <tr>
+                            <th>ÜRÜN ADI</th>
+                            <th>ASIN</th>
+                            <th>KATEGORİ</th>
+                            <th>ADET</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Örnek ürün satırları -->
+                        <tr>
+                            <td>
+                                <div class="product-info">
+                                    <img src="product1.jpg" alt="Ürün">
+                                    <span>HelloBaby Upgrade Baby Monitor, 5'''' Screen w...</span>
+                                </div>
+                            </td>
+                            <td>B09GM8JZM9</td>
+                            <td>Baby Products</td>
+                            <td>5</td>
+                        </tr>
+                        <!-- Diğer ürünler buraya eklenecek -->
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="categories">
+                <div class="section-header">
+                    <h3>Kategoriler</h3>
+                    <a href="/inventory/category.html" class="view-all">Tümünü gör</a>
+                </div>
+                <div class="category-list">
+                    <!-- Örnek kategori -->
+                    <div class="category-item">
+                        <div class="category-info">
+                            <span>Home & Kitchen</span>
+                            <div class="category-stats">
+                                <span class="price">104.47</span>
+                                <span class="count">6</span>
+                                <span class="total">1,670</span>
+                            </div>
+                        </div>
+                        <button class="more-options"><i class="material-icons">more_vert</i></button>
+                    </div>
+                    <!-- Diğer kategoriler buraya eklenecek -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

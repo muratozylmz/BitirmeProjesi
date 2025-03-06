@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SellerRunning</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+/* Shared Pool Page Styles */
+.dark-theme {
+    background-color: #1a1f2c;
+    color: #ffffff;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.title-with-icon {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.title-icon {
+    width: 24px;
+    height: 24px;
+    color: #007bff;
+}
+
+.product-count {
+    background-color: #242b3d;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #8b92a5;
+    margin-left: 10px;
+}
+
+.info-box {
+    background-color: #242b3d;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    color: #8b92a5;
+    line-height: 1.5;
+}
+
+.link-with-icon {
+    color: #007bff;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.inline-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.important-note {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(139, 146, 165, 0.1);
+}
+
+.important-note i {
+    color: #8b92a5;
+    font-size: 20px;
+}
+
+.blue-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.search-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: #242b3d;
+    border-radius: 8px;
+    padding: 8px 16px;
+    flex: 1;
+    margin-right: 20px;
+}
+
+.search-container input {
+    flex: 1;
+    background: none;
+    border: none;
+    color: #ffffff;
+    padding: 8px;
+}
+
+.search-container input::placeholder {
+    color: #8b92a5;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-secondary {
+    background-color: #242b3d;
+    color: #ffffff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.products-table {
+    width: 100%;
+}
+
+.products-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.products-table th,
+.products-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #242b3d;
+}
+
+.products-table th {
+    color: #8b92a5;
+    font-weight: normal;
+}
+
+.asin-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.products-table tr:hover {
+    background-color: #242b3d;
+}
+
+.material-icons {
+    color: #8b92a5;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .header-section {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .search-section {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .search-container {
+        margin-right: 0;
+    }
+
+    .action-buttons {
+        width: 100%;
+    }
+
+    .btn-secondary {
+        flex: 1;
+    }
+}
+    </style>
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-left">
+            <div class="logo">
+                <a href="../index.html">  <img src="seller-running-logo.png" alt="SELLER RUNNING"></a>
+            </div>
+            <ul class="nav-menu">
+                <li>
+                    <a href="#">Siparişler</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/orders/orders.html">Siparişler</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Envanter</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/inventory/inventorymanage.html">Envanter Yönetimi</a></li>
+                        <li><a href="/inventory/addProduct.html">Yeni Ürün Ekle</a></li>
+                        <li><a href="/inventory/variations.html">Ürün Varyasyonları</a></li>
+                        <li><a href="/inventory/bestSelling.html">Çok Satan Ürünler</a></li>
+                        <li><a href="/inventory/updateHistory.html">Güncelleme Geçmişi</a></li>
+                        <li><a href="/inventory/category.html">Kategori Listeleri</a></li>
+                        <li><a href="/inventory/productList.html">Ürün Listeleri</a></li>
+                        <li><a href="/inventory/pool.html">Ortak Havuz</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Raporlar</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/reports/salesReport.html">Satış Raporu</a></li>
+                        <li><a href="/reports/profitReport.html">Kar Raporu</a></li>
+                        <li><a href="/reports/allStores.html">Tüm Mağazalar Raporu</a></li>
+                        <li><a href="/reports/health.html">Hesap Sağlığı</a></li>
+                        <li><a href="/reports/buybox.html">Buybox Dağılımı</a></li>
+                        <li><a href="/reports/payments.html">Gelen Ödemeler</a></li>
+                        <li><a href="/reports/popular.html">Popüler Zamanlar</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Feedback</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/feedback/setup.html">Kurulum</a></li>
+                        <li><a href="/feedback/campaigns.html">Kampanyalar</a></li>
+                        <li><a href="/feedback/eposta.html">Gönderilen E-Postalar</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div class="search-bar">
+                <i class="material-icons">search</i>
+                <input type="text" placeholder="Ara: ASIN, SKU, Sipariş no">
+            </div>
+            <div class="user-controls">
+                <div class="language-select">
+                    <img src="../tr-flag.png" alt="TR" class="flag-icon">
+                </div>
+                <div class="user-avatar">
+                    <img src="../avatar.png" alt="Kullanıcı">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="content-section dark-theme">
+        <!-- Page Header -->
+        <div class="header-section">
+            <div class="title-wrapper">
+                <div class="title-with-icon">
+                    <img src="shared-pool-icon.svg" alt="Shared Pool Icon" class="title-icon">
+                    <h1>Ortak Ürün Havuzu <span class="product-count">52.500</span></h1>
+                </div>
+            </div>
+            <div class="header-actions">
+                <a href="#" class="youtube-link">
+                    <img src="youtube-icon.svg" alt="YouTube">
+                </a>
+                <div class="country-selector">
+                    <img src="uae-flag.svg" alt="UAE flag">
+                    <span>U.A.E.</span>
+                    <i class="material-icons">arrow_drop_down</i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Info Section -->
+        <div class="info-box">
+            <p>
+                Amazon tarafından SellerRunning kullanıcılarına gönderilen ürün uyarı e-postalarını okuyoruz ve bunları yasaklanmış ürünler havuzuna ekliyoruz. Bu şekilde, gelecekte Amazon'dan gelebilecek "Policy Warning" bildirimlerini en aza indirmeyi ve sizin envanterinizde olmasa bile diğer SellerRunning kullanıcıları sayesinde sorunlu ürünleri önceden tespit ederek hesabınızı daha güvenli hale getirmeyi amaçlıyoruz. Havuzdaki ürünleri seçerek
+                <a href="#" class="link-with-icon">
+                    yasaklanmış ürünler
+                    <img src="youtube-small-icon.svg" alt="YouTube" class="inline-icon">
+                </a> listenize ekleyebilirsiniz.
+            </p>
+            <div class="important-note">
+                <i class="material-icons">info</i>
+                <p>Önemli: Bu özelliklerin düzgün bir şekilde çalışması için lütfen tüm mağazalarınız için <a href="#" class="blue-link">Feedback ayarlarındaki</a> tüm adımları tamamladığınızdan emin olun.</p>
+            </div>
+        </div>
+
+        <!-- Search Section -->
+        <div class="search-section">
+            <div class="search-container">
+                <i class="material-icons">search</i>
+                <input type="text" placeholder="Ara: ASIN, Marka, Tür">
+            </div>
+            <div class="action-buttons">
+                <button class="btn-secondary">Seçili olanlar</button>
+                <button class="btn-secondary">İşlem seçin</button>
+            </div>
+        </div>
+
+        <!-- Products Table -->
+        <div class="products-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th><input type="checkbox"></th>
+                        <th>ASIN</th>
+                        <th>MARKA</th>
+                        <th>TÜR</th>
+                        <th>OLUŞTURMA</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td><a href="#" class="asin-link">B002R2DPK6</a></td>
+                        <td>...</td>
+                        <td>RestrictedProducts</td>
+                        <td>3 saat önce</td>
+                        <td><i class="material-icons">more_vert</i></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td><a href="#" class="asin-link">B074FGCTXM</a></td>
+                        <td>HONDA</td>
+                        <td>SuspectedIntellectualProperty</td>
+                        <td>3 gün önce</td>
+                        <td><i class="material-icons">more_vert</i></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td><a href="#" class="asin-link">B074FBQPWW</a></td>
+                        <td>HONDA</td>
+                        <td>SuspectedIntellectualProperty</td>
+                        <td>3 gün önce</td>
+                        <td><i class="material-icons">more_vert</i></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
