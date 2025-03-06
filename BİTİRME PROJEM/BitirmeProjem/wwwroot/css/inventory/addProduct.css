@@ -1,0 +1,117 @@
+.add-product-container {
+    padding: 2rem;
+    background-color: #1a2634;
+    min-height: calc(100vh - 60px);
+    color: #fff;
+}
+
+.product-form {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.envanter-title {
+    color: #4a90e2;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+.page-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #fff;
+}
+
+.bulk-add-section {
+    background-color: #243447;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.info-text {
+    margin: 1.5rem 0;
+}
+
+    .info-text p {
+        display: flex;
+        align-items: center;
+        margin: 0.5rem 0;
+        color: #a8b3cf;
+    }
+
+    .info-text .material-icons {
+        color: #4a90e2;
+        margin-right: 0.5rem;
+    }
+
+.selection-area, .asin-input-area, .sku-prefix-area {
+    margin: 2rem 0;
+}
+
+.asin-select {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #1a2634;
+    border: 1px solid #364c63;
+    border-radius: 4px;
+    color: #fff;
+    margin: 0.5rem 0;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    background-color: #1a2634;
+    border: 1px solid #364c63;
+    border-radius: 4px;
+    color: #fff;
+    padding: 1rem;
+    resize: vertical;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #1a2634;
+    border: 1px solid #364c63;
+    border-radius: 4px;
+    color: #fff;
+}
+
+.select-hint, .input-hint, .sku-hint {
+    color: #a8b3cf;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+.add-products-btn {
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+    .add-products-btn:hover {
+        background-color: #357abd;
+    }
+
+h3, h4 {
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+/* Responsive Tasarým */
+@media (max-width: 768px) {
+    .add-product-container {
+        padding: 1rem;
+    }
+
+    .bulk-add-section {
+        padding: 1rem;
+    }
+}

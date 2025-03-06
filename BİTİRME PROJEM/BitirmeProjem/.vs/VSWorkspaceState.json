@@ -2,15 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\Views",
-    "\\Views\\feedback",
-    "\\Views\\inventory",
-    "\\Views\\orders",
-    "\\Views\\reports",
-    "\\wwwroot",
-    "\\wwwroot\\css",
+    "\\Views\\Home",
+    "\\wwwroot\\css\\reports",
     "\\wwwroot\\images",
     "\\wwwroot\\js"
   ],
-  "SelectedNode": "\\Views\\reports\\allStores.cshtml",
+  "SelectedNode": "\\Views\\Home\\Index.cshtml",
   "PreviewInSolutionExplorer": false
 }

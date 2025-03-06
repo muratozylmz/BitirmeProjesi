@@ -1,0 +1,76 @@
+.dark-theme {
+    background-color: #1a1f2c;
+    color: #ffffff;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.info-box {
+    background-color: #242b3d;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    color: #8b92a5;
+}
+
+/* Payments Table */
+.payments-table {
+    width: 100%;
+    overflow-x: auto;
+}
+
+    .payments-table table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .payments-table th,
+    .payments-table td {
+        padding: 15px;
+        text-align: left;
+        border-bottom: 1px solid #242b3d;
+    }
+
+    .payments-table th {
+        color: #8b92a5;
+        font-weight: normal;
+    }
+
+    .payments-table tr:hover {
+        background-color: #242b3d;
+    }
+
+.status {
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+    .status.open {
+        color: #28a745;
+    }
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .header-section {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .payments-table {
+        overflow-x: scroll;
+    }
+}

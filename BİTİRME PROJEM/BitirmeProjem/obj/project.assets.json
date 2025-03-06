@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\MURAT\\OneDrive\\Desktop\\BitirmeProjesi\\BİTİRME PROJEM\\BitirmeProjem\\BitirmeProjem.csproj",
+      "projectUniqueName": "C:\\Users\\MURAT\\OneDrive\\Desktop\\BİTİRME ÖDEVİ\\BİTİRME PROJEM\\BitirmeProjem\\BitirmeProjem.csproj",
       "projectName": "BitirmeProjem",
-      "projectPath": "C:\\Users\\MURAT\\OneDrive\\Desktop\\BitirmeProjesi\\BİTİRME PROJEM\\BitirmeProjem\\BitirmeProjem.csproj",
+      "projectPath": "C:\\Users\\MURAT\\OneDrive\\Desktop\\BİTİRME ÖDEVİ\\BİTİRME PROJEM\\BitirmeProjem\\BitirmeProjem.csproj",
       "packagesPath": "C:\\Users\\MURAT\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\MURAT\\OneDrive\\Desktop\\BitirmeProjesi\\BİTİRME PROJEM\\BitirmeProjem\\obj\\",
+      "outputPath": "C:\\Users\\MURAT\\OneDrive\\Desktop\\BİTİRME ÖDEVİ\\BİTİRME PROJEM\\BitirmeProjem\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

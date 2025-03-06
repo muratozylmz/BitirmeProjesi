@@ -9,117 +9,117 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = BitirmeProjem
 build_property.RootNamespace = BitirmeProjem
-build_property.ProjectDir = C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\BitirmeProjem\
+build_property.ProjectDir = C:\Users\MURAT\OneDrive\Desktop\BİTİRME ÖDEVİ\BİTİRME PROJEM\BitirmeProjem\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\MURAT\OneDrive\Desktop\BitirmeProjesi\BİTİRME PROJEM\BitirmeProjem
+build_property.MSBuildProjectDirectory = C:\Users\MURAT\OneDrive\Desktop\BİTİRME ÖDEVİ\BİTİRME PROJEM\BitirmeProjem
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/MURAT/OneDrive/Desktop/BitirmeProjesi/BİTİRME PROJEM/BitirmeProjem/Views/feedback/campaigns.cshtml]
+[C:/Users/MURAT/OneDrive/Desktop/BİTİRME ÖDEVİ/BİTİRME PROJEM/BitirmeProjem/Views/feedback/campaigns.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcZmVlZGJhY2tcY2FtcGFpZ25zLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MURAT/OneDrive/Desktop/BitirmeProjesi/BİTİRME PROJEM/BitirmeProjem/Views/feedback/eposta.cshtml]
+[C:/Users/MURAT/OneDrive/Desktop/BİTİRME ÖDEVİ/BİTİRME PROJEM/BitirmeProjem/Views/feedback/eposta.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcZmVlZGJhY2tcZXBvc3RhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MURAT/OneDrive/Desktop/BitirmeProjesi/BİTİRME PROJEM/BitirmeProjem/Views/feedback/setup.cshtml]
+[C:/Users/MURAT/OneDrive/Desktop/BİTİRME ÖDEVİ/BİTİRME PROJEM/BitirmeProjem/Views/feedback/setup.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcZmVlZGJhY2tcc2V0dXAuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MURAT/OneDrive/Desktop/BitirmeProjesi/BİTİRME PROJEM/BitirmeProjem/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[C:/Users/MURAT/OneDrive/Desktop/BİTİRME ÖDEVİ/BİTİRME PROJEM/BitirmeProjem/Views/Home/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxpbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MURAT/OneDrive/Desktop/BitirmeProjesi/BİTİRME PROJEM/BitirmeProjem/Views/Home/Privacy.cshtml]
+[C:/Users/MURAT/OneDrive/Desktop/BİTİRME ÖDEVİ/BİTİRME PROJEM/BitirmeProjem/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MURAT/OneDrive/Desktop/BitirmeProjesi/BİTİRME PROJEM/BitirmeProjem/Views/inventory/addProduct.cshtml]
+[C:/Users/MURAT/OneDrive/Desktop/BİTİRME ÖDEVİ/BİTİRME PROJEM/BitirmeProjem/Views/inventory/addProduct.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcaW52ZW50b3J5XGFkZFByb2R1Y3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MURAT/OneDrive/Desktop/BitirmeProjesi/BİTİRME PROJEM/BitirmeProjem/Views/inventory/bestSelling.cshtml]
+[C:/Users/MURAT/OneDrive/Desktop/BİTİRME ÖDEVİ/BİTİRME PROJEM/BitirmeProjem/Views/inventory/bestSelling.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcaW52ZW50b3J5XGJlc3RTZWxsaW5nLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MURAT/OneDrive/Desktop/BitirmeProjesi/BİTİRME PROJEM/BitirmeProjem/Views/inventory/category.cshtml]
+[C:/Users/MURAT/OneDrive/Desktop/BİTİRME ÖDEVİ/BİTİRME PROJEM/BitirmeProjem/Views/inventory/category.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcaW52ZW50b3J5XGNhdGVnb3J5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MURAT/OneDrive/Desktop/BitirmeProjesi/BİTİRME PROJEM/BitirmeProjem/Views/inventory/inventorymanage.cshtml]
+[C:/Users/MURAT/OneDrive/Desktop/BİTİRME ÖDEVİ/BİTİRME PROJEM/BitirmeProjem/Views/inventory/inventorymanage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcaW52ZW50b3J5XGludmVudG9yeW1hbmFnZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MURAT/OneDrive/Desktop/BitirmeProjesi/BİTİRME PROJEM/BitirmeProjem/Views/inventory/pool.cshtml]
+[C:/Users/MURAT/OneDrive/Desktop/BİTİRME ÖDEVİ/BİTİRME PROJEM/BitirmeProjem/Views/inventory/pool.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcaW52ZW50b3J5XHBvb2wuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MURAT/OneDrive/Desktop/BitirmeProjesi/BİTİRME PROJEM/BitirmeProjem/Views/inventory/productList.cshtml]
+[C:/Users/MURAT/OneDrive/Desktop/BİTİRME ÖDEVİ/BİTİRME PROJEM/BitirmeProjem/Views/inventory/productList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcaW52ZW50b3J5XHByb2R1Y3RMaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MURAT/OneDrive/Desktop/BitirmeProjesi/BİTİRME PROJEM/BitirmeProjem/Views/inventory/updateHistory.cshtml]
+[C:/Users/MURAT/OneDrive/Desktop/BİTİRME ÖDEVİ/BİTİRME PROJEM/BitirmeProjem/Views/inventory/updateHistory.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcaW52ZW50b3J5XHVwZGF0ZUhpc3RvcnkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MURAT/OneDrive/Desktop/BitirmeProjesi/BİTİRME PROJEM/BitirmeProjem/Views/inventory/variations.cshtml]
+[C:/Users/MURAT/OneDrive/Desktop/BİTİRME ÖDEVİ/BİTİRME PROJEM/BitirmeProjem/Views/inventory/variations.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcaW52ZW50b3J5XHZhcmlhdGlvbnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MURAT/OneDrive/Desktop/BitirmeProjesi/BİTİRME PROJEM/BitirmeProjem/Views/orders/orders.cshtml]
+[C:/Users/MURAT/OneDrive/Desktop/BİTİRME ÖDEVİ/BİTİRME PROJEM/BitirmeProjem/Views/orders/orders.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3Ncb3JkZXJzXG9yZGVycy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MURAT/OneDrive/Desktop/BitirmeProjesi/BİTİRME PROJEM/BitirmeProjem/Views/reports/allStores.cshtml]
+[C:/Users/MURAT/OneDrive/Desktop/BİTİRME ÖDEVİ/BİTİRME PROJEM/BitirmeProjem/Views/reports/allStores.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NccmVwb3J0c1xhbGxTdG9yZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MURAT/OneDrive/Desktop/BitirmeProjesi/BİTİRME PROJEM/BitirmeProjem/Views/reports/buybox.cshtml]
+[C:/Users/MURAT/OneDrive/Desktop/BİTİRME ÖDEVİ/BİTİRME PROJEM/BitirmeProjem/Views/reports/buybox.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NccmVwb3J0c1xidXlib3guY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MURAT/OneDrive/Desktop/BitirmeProjesi/BİTİRME PROJEM/BitirmeProjem/Views/reports/health.cshtml]
+[C:/Users/MURAT/OneDrive/Desktop/BİTİRME ÖDEVİ/BİTİRME PROJEM/BitirmeProjem/Views/reports/health.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NccmVwb3J0c1xoZWFsdGguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MURAT/OneDrive/Desktop/BitirmeProjesi/BİTİRME PROJEM/BitirmeProjem/Views/reports/payments.cshtml]
+[C:/Users/MURAT/OneDrive/Desktop/BİTİRME ÖDEVİ/BİTİRME PROJEM/BitirmeProjem/Views/reports/payments.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NccmVwb3J0c1xwYXltZW50cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MURAT/OneDrive/Desktop/BitirmeProjesi/BİTİRME PROJEM/BitirmeProjem/Views/reports/popular.cshtml]
+[C:/Users/MURAT/OneDrive/Desktop/BİTİRME ÖDEVİ/BİTİRME PROJEM/BitirmeProjem/Views/reports/popular.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NccmVwb3J0c1xwb3B1bGFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MURAT/OneDrive/Desktop/BitirmeProjesi/BİTİRME PROJEM/BitirmeProjem/Views/reports/profitReport.cshtml]
+[C:/Users/MURAT/OneDrive/Desktop/BİTİRME ÖDEVİ/BİTİRME PROJEM/BitirmeProjem/Views/reports/profitReport.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NccmVwb3J0c1xwcm9maXRSZXBvcnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MURAT/OneDrive/Desktop/BitirmeProjesi/BİTİRME PROJEM/BitirmeProjem/Views/reports/salesReport.cshtml]
+[C:/Users/MURAT/OneDrive/Desktop/BİTİRME ÖDEVİ/BİTİRME PROJEM/BitirmeProjem/Views/reports/salesReport.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NccmVwb3J0c1xzYWxlc1JlcG9ydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MURAT/OneDrive/Desktop/BitirmeProjesi/BİTİRME PROJEM/BitirmeProjem/Views/Shared/Error.cshtml]
+[C:/Users/MURAT/OneDrive/Desktop/BİTİRME ÖDEVİ/BİTİRME PROJEM/BitirmeProjem/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MURAT/OneDrive/Desktop/BitirmeProjesi/BİTİRME PROJEM/BitirmeProjem/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/MURAT/OneDrive/Desktop/BİTİRME ÖDEVİ/BİTİRME PROJEM/BitirmeProjem/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MURAT/OneDrive/Desktop/BitirmeProjesi/BİTİRME PROJEM/BitirmeProjem/Views/_ViewImports.cshtml]
+[C:/Users/MURAT/OneDrive/Desktop/BİTİRME ÖDEVİ/BİTİRME PROJEM/BitirmeProjem/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MURAT/OneDrive/Desktop/BitirmeProjesi/BİTİRME PROJEM/BitirmeProjem/Views/_ViewStart.cshtml]
+[C:/Users/MURAT/OneDrive/Desktop/BİTİRME ÖDEVİ/BİTİRME PROJEM/BitirmeProjem/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MURAT/OneDrive/Desktop/BitirmeProjesi/BİTİRME PROJEM/BitirmeProjem/Views/Shared/_Layout.cshtml]
+[C:/Users/MURAT/OneDrive/Desktop/BİTİRME ÖDEVİ/BİTİRME PROJEM/BitirmeProjem/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-x87y3lur3g

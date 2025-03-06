@@ -4,211 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SellerRunning</title>
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="~/css/style.css">
+    <link rel="stylesheet" href="~/css/reports/allStores.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <style>
-        /* All Stores Report Page Styles */
-.dark-theme {
-    background-color: #1a1f2c;
-    color: #ffffff;
-    min-height: 100vh;
-    padding: 20px;
-}
-
-.header-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 30px;
-}
-
-.title-category {
-    color: #8b92a5;
-    font-size: 14px;
-    margin-bottom: 8px;
-}
-
-.header-actions {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.date-picker {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    background-color: #242b3d;
-    padding: 8px 16px;
-    border-radius: 6px;
-    cursor: pointer;
-}
-
-.info-box {
-    background-color: #242b3d;
-    padding: 15px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    color: #8b92a5;
-}
-
-/* Stats Grid */
-.stats-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    margin-bottom: 20px;
-}
-
-.additional-stats {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    margin-bottom: 20px;
-}
-
-.stat-card {
-    background-color: #242b3d;
-    padding: 20px;
-    border-radius: 8px;
-    position: relative;
-}
-
-.stat-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 15px;
-}
-
-.stat-title {
-    color: #8b92a5;
-    font-size: 12px;
-    text-transform: uppercase;
-}
-
-.currency-icon {
-    color: #8b92a5;
-    font-size: 14px;
-}
-
-.stat-value {
-    font-size: 24px;
-    font-weight: bold;
-    color: #ffffff;
-}
-
-/* Progress Bar */
-.progress-bar {
-    background-color: #242b3d;
-    border-radius: 4px;
-    height: 8px;
-    margin-top: 10px;
-}
-
-.progress {
-    background-color: #007bff;
-    height: 100%;
-    border-radius: 4px;
-}
-
-/* Chart Section */
-.chart-section {
-    background-color: #242b3d;
-    padding: 20px;
-    border-radius: 8px;
-    margin-top: 20px;
-}
-
-.chart-section h2 {
-    color: #ffffff;
-    font-size: 16px;
-    margin-bottom: 20px;
-}
-
-.chart-container {
-    width: 100%;
-    height: 300px;
-    /* Chart specific styles will be added here */
-}
-
-/* Responsive Design */
-@media (max-width: 1200px) {
-    .header-section {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 15px;
-    }
-
-    .stats-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .additional-stats {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 768px) {
-    .stats-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .header-actions {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .date-picker {
-        width: 100%;
-    }
-}
-    </style>
+    
 </head>
 <body>
     <nav class="main-nav">
         <div class="nav-left">
             <div class="logo">
-                <a href="../index.html">  <img src="seller-running-logo.png" alt="SELLER RUNNING"></a>
+                <a href="/Home/index">  <img src="seller-running-logo.png" alt="SELLER RUNNING"></a>
             </div>
             <ul class="nav-menu">
                 <li>
                     <a href="#">Siparişler</a>
                     <ul class="dropdown-menu">
-                        <li><a href="/orders/orders.html">Siparişler</a></li>
+                        <li><a href="/orders/orders">Siparişler</a></li>
                     </ul>
                 </li>
                 <li>
                     <a href="#">Envanter</a>
                     <ul class="dropdown-menu">
-                        <li><a href="/inventory/inventorymanage.html">Envanter Yönetimi</a></li>
-                        <li><a href="/inventory/addProduct.html">Yeni Ürün Ekle</a></li>
-                        <li><a href="/inventory/variations.html">Ürün Varyasyonları</a></li>
-                        <li><a href="/inventory/bestSelling.html">Çok Satan Ürünler</a></li>
-                        <li><a href="/inventory/updateHistory.html">Güncelleme Geçmişi</a></li>
-                        <li><a href="/inventory/category.html">Kategori Listeleri</a></li>
-                        <li><a href="/inventory/productList.html">Ürün Listeleri</a></li>
-                        <li><a href="/inventory/pool.html">Ortak Havuz</a></li>
+                        <li><a href="/inventory/inventorymanage">Envanter Yönetimi</a></li>
+                        <li><a href="/inventory/addProduct">Yeni Ürün Ekle</a></li>
+                        <li><a href="/inventory/variations">Ürün Varyasyonları</a></li>
+                        <li><a href="/inventory/bestSelling">Çok Satan Ürünler</a></li>
+                        <li><a href="/inventory/updateHistory">Güncelleme Geçmişi</a></li>
+                        <li><a href="/inventory/category">Kategori Listeleri</a></li>
+                        <li><a href="/inventory/productList">Ürün Listeleri</a></li>
+                        <li><a href="/inventory/pool">Ortak Havuz</a></li>
                     </ul>
                 </li>
                 <li>
                     <a href="#">Raporlar</a>
                     <ul class="dropdown-menu">
-                        <li><a href="/reports/salesReport.html">Satış Raporu</a></li>
-                        <li><a href="/reports/profitReport.html">Kar Raporu</a></li>
-                        <li><a href="/reports/allStores.html">Tüm Mağazalar Raporu</a></li>
-                        <li><a href="/reports/health.html">Hesap Sağlığı</a></li>
-                        <li><a href="/reports/buybox.html">Buybox Dağılımı</a></li>
-                        <li><a href="/reports/payments.html">Gelen Ödemeler</a></li>
-                        <li><a href="/reports/popular.html">Popüler Zamanlar</a></li>
+                        <li><a href="/reports/salesReport">Satış Raporu</a></li>
+                        <li><a href="/reports/profitReport">Kar Raporu</a></li>
+                        <li><a href="/reports/allStores">Tüm Mağazalar Raporu</a></li>
+                        <li><a href="/reports/health">Hesap Sağlığı</a></li>
+                        <li><a href="/reports/buybox">Buybox Dağılımı</a></li>
+                        <li><a href="/reports/payments">Gelen Ödemeler</a></li>
+                        <li><a href="/reports/popular">Popüler Zamanlar</a></li>
                     </ul>
                 </li>
                 <li>
                     <a href="#">Feedback</a>
                     <ul class="dropdown-menu">
-                        <li><a href="/feedback/setup.html">Kurulum</a></li>
-                        <li><a href="/feedback/campaigns.html">Kampanyalar</a></li>
-                        <li><a href="/feedback/eposta.html">Gönderilen E-Postalar</a></li>
+                        <li><a href="/feedback/setup">Kurulum</a></li>
+                        <li><a href="/feedback/campaigns">Kampanyalar</a></li>
+                        <li><a href="/feedback/eposta">Gönderilen E-Postalar</a></li>
                     </ul>
                 </li>
             </ul>
@@ -220,10 +64,10 @@
             </div>
             <div class="user-controls">
                 <div class="language-select">
-                    <img src="../tr-flag.png" alt="TR" class="flag-icon">
+                    <img src="~/images/tr-flag.png" alt="TR" class="flag-icon">
                 </div>
                 <div class="user-avatar">
-                    <img src="../avatar.png" alt="Kullanıcı">
+                    <img src="~/images/avatar.png" alt="Kullanıcı">
                 </div>
             </div>
         </div>

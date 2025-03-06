@@ -1,0 +1,90 @@
+/* Sent Emails Page Styles */
+.dark-theme {
+    background-color: #1a1f2c;
+    color: #ffffff;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.info-box {
+    background-color: #242b3d;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    color: #8b92a5;
+}
+
+/* Search Section */
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: #242b3d;
+    border-radius: 8px;
+    padding: 8px 16px;
+    margin-bottom: 20px;
+}
+
+    .search-container input {
+        flex: 1;
+        background: none;
+        border: none;
+        color: #ffffff;
+        padding: 8px;
+    }
+
+        .search-container input::placeholder {
+            color: #8b92a5;
+        }
+
+/* Emails Table */
+.emails-table {
+    width: 100%;
+    overflow-x: auto;
+}
+
+    .emails-table table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .emails-table th,
+    .emails-table td {
+        padding: 15px;
+        text-align: left;
+        border-bottom: 1px solid #242b3d;
+    }
+
+    .emails-table th {
+        color: #8b92a5;
+        font-weight: normal;
+    }
+
+    .emails-table tr:hover {
+        background-color: #242b3d;
+    }
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .header-section {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .emails-table {
+        overflow-x: scroll;
+    }
+}
