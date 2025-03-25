@@ -1,1 +1,3 @@
-https://webservices.amazon.com/paapi5/documentation/document-history.html
+https://affiliate-program.amazon.com/
+
+https://webservices.amazon.com/paapi5/documentation/
